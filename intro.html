@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<p id="p1"></p>
+	<br>
+	<p id="p2"></p>
+
+	<script src="matriz.js"></script>
+	<script>
+		//Conforme sugerido, pensei em colocar todas as funções que criamos para manipular matrizes em um arquivo JavaScript, como podem ver acima. Neste script, usamos nossa "biblioteca" matriz.js ! Poderíamos separar este script principal, também, em outro arquivo.
+
+		var m1 = cria_matriz_zeros(10, 10);
+		var m2 = cria_matriz_zeros(5, 7);
+		imprime_matriz(m1, "p1");
+		m2[1][2] = 5;
+		m2[3][3] = "a";
+		m2[0][1] = "b";
+		imprime_matriz(m2, "p2");
+	</script>
+	</body>
+</html>
