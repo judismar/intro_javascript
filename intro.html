@@ -8,8 +8,11 @@
 	<p id="p1"></p>
 	<br>
 	<p id="p2"></p>
+	<br>
+	<p id="somando"></p>
 
 	<script src="matriz.js"></script>
+	<script src="outros.js"></script>
 	<script>
 		//Conforme sugerido, pensei em colocar todas as funções que criamos para manipular matrizes em um arquivo JavaScript, como podem ver acima. Neste script, usamos nossa "biblioteca" matriz.js ! Poderíamos separar este script principal, também, em outro arquivo.
 
@@ -20,6 +23,8 @@
 		m2[3][3] = "a";
 		m2[0][1] = "b";
 		imprime_matriz(m2, "p2");
+		//Acrescentei nossa função de soma em 'outros.js'. Experimeente com diferentes números.
+		document.getElementById("somando").innerHTML = soma([1, 5, 3, 8.9]);
 	</script>
 	</body>
 </html>
